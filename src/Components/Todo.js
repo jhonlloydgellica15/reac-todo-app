@@ -19,9 +19,9 @@ const mapDispatchToProps = (dispatch) => ({
   deleteTodo: (key) => dispatch(deleteTodo(key)),
   editTodo: (key) => dispatch(editTodo(key)),
 });
-const mapStateToProps = (state) => ({
-  text: state.text,
-  selected: state.selected,
+const mapStateToProps = ({ text, selected }) => ({
+  text,
+  selected,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Todo);

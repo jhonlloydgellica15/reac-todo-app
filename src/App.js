@@ -12,7 +12,7 @@ const App = ({ deleteAll, persistTodo }) => {
   return (
     <main className="container">
       <div className="card text-center">
-        <div className="card-header">Todo List</div>
+        <div className="card-header">Todo List {}</div>
         <div className="card-body">
           <InputField />
           <TodosList />

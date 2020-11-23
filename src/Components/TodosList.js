@@ -12,8 +12,8 @@ const TodosList = ({ todos }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  todos: state.todos,
+const mapStateToProps = ({ todos }) => ({
+  todos,
 });
 
 export default connect(mapStateToProps)(TodosList);
